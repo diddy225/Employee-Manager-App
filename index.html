@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Employee Manager</title>
+</head>
+<body>
+  <main class="container">
+    <h1>Employee Manager</h1>
+    <nav>
+      <ul>
+        <li id="print">Print </li>
+        <li id="verify">Verify </li>
+        <li id="lookup">Lookup </li>
+        <li id="contains">Contains </li>
+        <li id="update">Update </li>
+        <li id="add">Add </li>
+        <li id="remove">Delete</li>
+      </ul>
+    </nav>
+
+    <form action="">
+      <input placeholder="Username" id="input" type="text">
+      <input placeholder="Office Number" class="inputNum" id="office" type="number">
+      <input placeholder="Phone Number" class="inputNum" id="phone" type="tel">
+      <button id="submit">Search</button>
+    </form>
+
+    <section class="content"></section>
+  </main>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
