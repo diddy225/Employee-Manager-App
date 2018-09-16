@@ -136,6 +136,7 @@ const print = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "none");
+  state.render('PRINT DIRECTORY');
   clearInput();
 };
 
@@ -147,6 +148,7 @@ const verify = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('VERIFY AN EMPLOYEE');
   clearInput();
 }
 
@@ -158,6 +160,7 @@ const lookup = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('LOOKUP AN EMPLOYEE');
   clearInput();
 }
 
@@ -169,6 +172,7 @@ const contains = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('SEARCH BY LETTER');
   clearInput();
 }
 
@@ -180,6 +184,7 @@ const update = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('UPDATE AN EMPLOYEES INFO');
 }
 
 const add = function(){
@@ -190,6 +195,7 @@ const add = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('ADD AN EMPLOYEE');
 }
 
 const remove = function(){
@@ -200,6 +206,7 @@ const remove = function(){
   $('form p').addClass('show');
   $('#button').css("display", "inline");
   $('#input').css("display", "inline");
+  state.render('DELETE AN EMPLOYEE');
 }
 
 $('#remove').on('click', remove);
