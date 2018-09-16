@@ -4,39 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <title>Employee Manager</title>
 </head>
 <body>
-  <main class="container">
-    <h1>Employee Manager</h1>
-    <nav>
-      <ul>
-        <li id="print">Print </li>
-        <li id="verify">Verify </li>
-        <li id="lookup">Lookup </li>
-        <li id="contains">Contains </li>
-        <li id="update">Update </li>
-        <li id="add">Add </li>
-        <li id="remove">Delete</li>
-      </ul>
-    </nav>
+<main class="container">
+  <nav>
+    <ul>
+      <p><i class="far fa-address-book"></i></p>
+      <p>SIMPLICITY</p>
+      <li id="print">Print </li>
+      <li id="verify">Verify </li>
+      <li id="lookup">Lookup </li>
+      <li id="contains">Contains </li>
+      <li id="update">Update </li>
+      <li id="add">Add </li>
+      <li id="remove">Delete</li>
+    </ul>
+  </nav>
 
+  <section id="main-content">
+    <h1>WELCOME TO <span id="header-color">SIMPLICITY</span><br/><span id="sub-header">The Minimalistic Directory.</span></h1>
     <form action="">
+      <p>The Minimalistic Directory.</p> <br/>
       <input placeholder="Username" id="input" type="text">
       <input placeholder="Office Number" class="inputNum" id="office" type="number">
       <input placeholder="Phone Number" class="inputNum" id="phone" type="tel">
-      <button id="submit">Confirm</button>
+      <i id="button" type="submit" class="fas fa-search"></i>
     </form>
-
     <section class="content"></section>
-  </main>
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  </section>
+</main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script src="app.js"></script>
 </body>
 </html>
 

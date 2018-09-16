@@ -131,54 +131,75 @@ const clearInput = function(){
 const print = function(){
   state.command = 'print';
   $('.content').empty();
-  $('#input').removeClass('show');
   $('.inputNum').removeClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "none");
   clearInput();
 };
 
 const verify = function(){
   state.command = 'verify';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').removeClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
   clearInput();
 }
 
 const lookup = function(){
   state.command = 'lookup';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').removeClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
   clearInput();
 }
 
 const contains = function(){
   state.command = 'contains';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').removeClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
   clearInput();
 }
 
 const update = function(){
   state.command = 'update';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').addClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
 }
 
 const add = function(){
   state.command = 'add';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').addClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
 }
 
 const remove = function(){
   state.command = 'remove';
   $('.content').empty();
-  $('#input').addClass('show');
   $('.inputNum').removeClass('show');
+  $('h1').addClass('hide');
+  $('form p').addClass('show');
+  $('#button').css("display", "inline");
+  $('#input').css("display", "inline");
 }
 
 $('#remove').on('click', remove);
@@ -188,4 +209,4 @@ $('#contains').on('click', contains);
 $('#lookup').on('click', lookup);
 $('#verify').on('click', verify);
 $('#print').on('click', print);
-$('#submit').on('click', runCommand);
+$('#button').on('click', runCommand);

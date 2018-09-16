@@ -1,10 +1,119 @@
-input {
-    display: none;
+body {
+    font-family: 'Varela Round', sans-serif;
 }
 
 .show {
-    display: block;
+    display: inline;
 }
 
+.hide, form p, input, #input, #button{
+    display: none;
+}
 
+.container {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+nav {
+    background-color: #333333;
+    display: grid;
+}
+
+nav ul {
+    align-self: center;
+    justify-self: center;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #74777B;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: #ddcf2c;
+    transition: .5s;
+}
+
+nav ul p:first-child{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#fff;
+}
+nav ul p:nth-child(2){
+    color: #ddcf2c;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#main-content {
+    background-image: url("assets/alex-581041-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 25px solid #fff;
+    color: #555;
+    padding: 30px 0 0 30px;
+}
+
+h1 {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 350px;
+    color: #fff;
+}
+
+form p {
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+    background:#f1f1f1; 
+    border:1px solid #ccc;
+}
+
+#input {
+    margin-top: 20px;
+}
+
+#button {
+    font-size: .9em;
+}
+
+#header-color{
+    color: #ddcf2c;
+    border: 3px solid #d1ca00;
+    padding: 5px 10px;
+}
+
+#sub-header {
+    font-size: 15px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content p {
+    margin: 15px 0;
+    border: 2px solid #fff;
+    width: 8%;
+    padding: 5px 15px;
+    background-color: #555;
+    color: #fff;
+    box-shadow: 3px 3px 10px #333333;
+    text-align: center;
+    line-height: 1.4;
+}
 
